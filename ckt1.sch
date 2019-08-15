@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12499,11 +12499,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="246.38" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="SEL+"/>
-<wire x1="251.46" y1="134.62" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
-<label x="246.38" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="V+"/>
 <wire x1="251.46" y1="121.92" x2="246.38" y2="121.92" width="0.1524" layer="91"/>
 <label x="246.38" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -12512,11 +12507,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="S1" gate="G$1" pin="H+"/>
 <wire x1="251.46" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
 <label x="246.38" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="S1" gate="G$1" pin="SEL+"/>
-<wire x1="251.46" y1="101.6" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
-<label x="246.38" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="1" pin="OUT"/>
@@ -12577,11 +12567,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="246.38" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="SEL-"/>
-<wire x1="251.46" y1="132.08" x2="246.38" y2="132.08" width="0.1524" layer="91"/>
-<label x="246.38" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="V-"/>
 <wire x1="251.46" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
 <label x="246.38" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -12590,11 +12575,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="S1" gate="G$1" pin="H-"/>
 <wire x1="251.46" y1="106.68" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
 <label x="246.38" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="S1" gate="G$1" pin="SEL-"/>
-<wire x1="251.46" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
-<label x="246.38" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="1" pin="GND"/>
@@ -12778,9 +12758,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="246.38" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="V"/>
-<wire x1="251.46" y1="119.38" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="246.38" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="U1" pin="PC0(ADC0)"/>
+<wire x1="60.96" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<label x="66.04" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PC1" class="0">
@@ -12790,9 +12770,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="246.38" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="H"/>
-<wire x1="251.46" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
-<label x="246.38" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="U1" pin="PC1(ADC1)"/>
+<wire x1="60.96" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<label x="66.04" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12831,6 +12811,30 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="Y1" gate="G$1" pin="1"/>
 <pinref part="U1" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="10.16" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PC2" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PC2(ADC2)"/>
+<wire x1="60.96" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="66.04" y="91.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="V"/>
+<wire x1="251.46" y1="119.38" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
+<label x="246.38" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PC3" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PC3(ADC3)"/>
+<wire x1="60.96" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="66.04" y="88.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="H"/>
+<wire x1="251.46" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
+<label x="246.38" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
